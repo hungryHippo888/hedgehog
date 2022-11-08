@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+   <title>Iterative Design</title>
+   <link rel="stylesheet" href="style.css">
+   <meta name="description" content="my assignment write up">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+   <body>
+    <div class="body">
+
+       <h1>Hedgehog Iterative Design</h1>
+
+    <div class="head">  
+    <div>     
+        <div class="icon"></div>
+    </div>
+    <div>
+       <p style="font-size: larger;>
+          The startup our group chose, <span style="text-decoration: underline; text-shadow: 1px 1px 4px #BFA68B;">Hedgehog,</span> is designing <span style="text-decoration: underline; text-shadow: 1px 1px 4px #BFA68B;">AI-driven robots to optimize the mushroom farming process</span>. Even though parts of the process will be automated, there will still be a need for overview and intervention from experienced mushroom farmers, and the mobile app we have designed is intended for those users to be able to overview the status of the farm, plan out planting and harvesting dates, and interact with the robotics. We hope this app has a positive impact on the workstyles of the users, making their farming work more efficient and less tedious by delegating away automatable tasks, while also letting them work professionally with an app that is intuitive to learn and use daily.
+       </p>
+       </div>
+</div>
+
+        <h1>Part 1: Sketching and Wireframing</h1>
+        <h2>Sketching</h2>
+        <div class="container">
+            <!-- <div class="container"> -->
+            <div>   
+              <div class="row">
+                <div class="col">
+                    <img src="./components/sketch1.png" class="storyboard" alt="slide 1 storyboard">
+                </div>
+                <div class="col">
+                    <img src="./components/sketch2.png" class="storyboard" alt="slide 1 storyboard">
+                </div>
+                <div class="col">
+                    <img src="./components/sketch3.png" class="storyboard" alt="slide 3 storyboard">
+                </div>
+            </div>  
+              <div class="row">
+                <div class="col">
+                    <img src="./components/sketch4.png" class="storyboard" alt="slide 1 storyboard">
+                </div>
+                <div class="col">
+                    <img src="./components/sketch5.png" class="storyboard" alt="slide 1 storyboard">
+                </div>
+                <div class="col">
+                    <img src="./components/sketch6.png" class="storyboard" alt="slide 3 storyboard">
+                </div>
+            </div> 
+              <div class="row">
+                <div class="col">
+                    <img src="./components/sketch7.png" class="storyboard" alt="slide 1 storyboard">
+                </div>
+                <div class="col">
+                    <img src="./components/sketch8.png" class="storyboard" alt="slide 1 storyboard">
+                </div>
+                <div class="col">
+                    <img src="./components/sketch9.png" class="storyboard" alt="slide 3 storyboard">
+                </div>
+            </div> 
+              <div class="row">
+                <div class="col">
+                    <img src="./components/sketch10.png" class="storyboard" alt="slide 1 storyboard">
+                </div>
+                <div class="col">
+                    <img src="./components/sketch11.png" class="storyboard" alt="slide 1 storyboard">
+                </div>
+                <div class="col">
+                    <img src="./components/sketch12.png" class="storyboard" alt="slide 3 storyboard">
+                </div>
+            </div> 
+        </div>
+        <h2>Combining Ideas into a Wireframe</h2>
+        <div class="container">
+            <!-- <div class="container"> -->
+            <div>   
+              <div class="row">
+                <div class="col">
+                    <img src="./components/lofi3.png" class="storyboard2" alt="main page">
+                    <p>We thought of many different ways to represent the analytics dashboard of all the different clusters in the app, and in the end we chose a spatial representation in the form of a simplified map of the farm. This page acts as the landing page for the app because it functions as the highest level overview of the mushroom farm. It allows the user to see the status of the farm, including any issues with planted mushroom clusters (these issues are marked with a warning icon, implying there needs to be human interaction with an un-automatable task). From this page, the user can also click on empty cluster spaces to show that they will plant a new cluster, or see more information about an already planted cluster by clicking on its box and seeing the details & analytics page.</p>
+                </div>
+                <div class="col">
+                    <img src="./components/lofi4.png" class="storyboard2" alt="add cluster page">
+                    <p>We decided to create an “Add New Cluster” page to showcase the user adding a new cluster that the robot can interact with. The necessary fields we had were Nickname, Cluster Number, Date Planted, and Mushroom Type. The Nickname, Cluster Number, and Mushroom Type fields allow the user to identify specific clusters, and the Date Planted field records when the user planted a particular cluster of mushrooms.</p>
+                </div>
+                <div class="col">
+                    <img src="./components/lofi5.png" class="storyboard2" alt="mushroom analytics page">
+                    <p>We created a page for each mushroom cluster that shows the details and analytics of that cluster, including the nickname, cluster number, type, date planted, age, time until harvest, temperature, humidity, and any warnings the cluster may have. The temperature and humidity information comes from the robot’s sensors and are provided to the user to help with any warnings/changes they may need to make. These pages can be accessed by clicking on any mushroom cluster from the home/map page, or by clicking on a cluster’s name from the calendar page.</p>
+                </div>
+            </div>  
+              <div class="row">
+                <div class="col">
+                    <img src="./components/lofi1.png" class="storyboard2" alt="calendar 1 page">
+                    <p>We decided to build an Apple-inspired calendar page for the user to keep track of dates for planting and harvesting mushroom clusters. We thought that having all of the information on the initial month-calendar page would be overwhelming, so we adopted Apple’s use of dots below the date to signify an event (planting or harvesting) on that day.</p>
+                </div>
+                <div class="col">
+                    <img src="./components/lofi2.png" class="storyboard2" alt="calendar 2 page">
+                    <p>If the user clicks on a day, they are taken to the week-calendar page which shows the events of that day, separated into planting and harvesting sections. From these day pages, users can also click on any cluster name to see the details & analytics page!</p>
+                </div>
+            </div>  
+        </div>
+
+    </div>
+        <h1>Part 2: Mockups</h1>
+        <h2>Interactive High Fidelity Mockup</h2>
+
+       <div class="figma">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FzdyYLcnWqic6dBUKJVRLK1%2FHedgehog-Mockup%3Fnode-id%3D0%253A1" allowfullscreen></iframe>    
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FzdyYLcnWqic6dBUKJVRLK1%2FHedgehog-Mockup%3Fnode-id%3D0%253A1" allowfullscreen></iframe>  
+        </div>
+        <h2>Mockup Crit in Studio Key Takeaways</h2>
+        <h1 style="color: green;">TODO</h1>
+        <h1 style="color: green;">TODO</h1>
+        <h1 style="color: green;">TODO</h1>
+
+        <h2>Updated High Fidelity Prototype</h2>
+       <div class="figma">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FTffyoyKvKhigzSvNilhPPV%2FHedgehog-Hi-Fi%3Fnode-id%3D0%253A1" allowfullscreen></iframe>      
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTffyoyKvKhigzSvNilhPPV%2FHedgehog-Hi-Fi%3Fnode-id%3D0%253A1" allowfullscreen></iframe>    
+        </div>
+        <h1>Part 3: User Testing</h1> 
+    </div>    
+   </body>
+</html>

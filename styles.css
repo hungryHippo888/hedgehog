@@ -1,0 +1,100 @@
+.body {
+   font-family: SFMono-Regular;
+   background-color: #EBDBCA;
+   color: #783F04;
+   font-size: large;
+   line-height: 1.5;
+   padding: 0px;
+   margin: 0px;
+}
+
+.text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-left: 250px;
+   margin-right: 250px;
+}
+.image {
+   max-width: 700px;
+   width: 100%;
+   margin: 10px;
+}
+h1 {
+   font-family: 'Roboto Condensed', sans-serif;
+   text-align: center;
+   color: #783F04;
+   text-shadow: 1px 1px 4px #BFA68B;
+}
+h2 {
+   font-family: 'Roboto Condensed', sans-serif;
+   color: #783F04;
+   text-align: center;
+   font-size: large;
+   text-decoration: underline;
+}
+
+.storyboard {
+   display: block;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 100%;
+   max-width: 300px;
+   border-style: solid;
+   border-color: black;
+   border-radius: 8px;
+   transition: transform .2s;
+}
+
+.storyboard2 {
+   display: block;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 100%;
+   border-style: solid;
+   border-color: black;
+   border-radius: 8px;
+   transition: transform .2s;
+}
+
+.storyboard:hover {
+   transform: scale(1.05);
+    z-index: 1;
+}
+
+.storyboard2:hover {
+   transform: scale(1.01);
+    z-index: 1;
+}
+
+.head {
+   border: 2px solid; 
+   display: flex;
+   border-radius: 20px;
+   width: 60vw;
+   height: 75%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.icon {
+   height: 300px;
+   width: 200px;
+  background: url("components/hedgehog.svg") no-repeat;
+}
+
+.icon:hover {
+  background: url("components/hedgehog3.svg") no-repeat;
+}
+
+.figma {
+   display: flex;
+   justify-content: center;
+   margin: auto;
+}
